@@ -13,29 +13,92 @@ h1, h2 {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 a {
   color: #2a646c;
 }
 
+nav {
+  margin: 1.5em 0;
+}
+
 nav a:hover {
   color: red;
 }
 
-.category_card {
+.category-card {
   text-align: center;
   padding: 0.01em;
   margin: 2em 20px 2em;
   width: 100%;
 }
 
-.category_card img {
+.category-card img {
   width: 20em;
   height: 20em;
-  border: 0.5em solid #ffff;
+  border: 0.5em solid #847EB1;
 }
 
-.category_card img:hover {
+.category-card img:hover {
   border: 0.5em solid #354677;
+}
+
+.story-card {
+  width: 16em;
+  /* margin: 2em 20px 2em; */
+  padding: 0.01em;
+  margin: 2em auto;
+}
+
+.story-card h3 {
+  text-align: center;
+}
+
+.story-card img {
+  border: 0.5em solid #847EB1;
+}
+
+.story-card img:hover {
+  border: 0.5em solid #354677; 
+}
+
+.story-text {
+  margin-bottom: 1em;
+}
+
+section {
+  margin: 3em 3em 10em;
+}
+
+#dancing-elves {
+  float: right;
+  margin: 0 2em;
+}
+
+#hiding-elves {
+  display: block;
+  margin: 0 auto;
+}
+
+#grimm-photo {
+  float: left;
+  margin-right: 2em;
+}
+
+.notable-works {
+  text-align: center;
+  font-style: italic;
+  color: #2a646c
+}
+
+.notable-works ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.notable-works li {
+  margin: 0.5em 0;
 }
