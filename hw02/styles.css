@@ -1,0 +1,41 @@
+h1 {
+  color: #354677;
+}
+
+h2 {
+  color: #493579;
+}
+
+h1, h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #2a646c;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.category_card {
+  text-align: center;
+  padding: 0.01em;
+  margin: 2em 20px 2em;
+  width: 100%;
+}
+
+.category_card img {
+  width: 20em;
+  height: 20em;
+  border: 0.5em solid #ffff;
+}
+
+.category_card img:hover {
+  border: 0.5em solid #354677;
+}
