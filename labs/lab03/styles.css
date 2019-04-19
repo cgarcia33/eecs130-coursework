@@ -10,7 +10,7 @@
  }
  
  .menu1, .menu2, .card1, .card2, .card3, .main, .aside {
-    padding: 5px;
+    padding: 0.6em;
  }
  
  .menu1 {
@@ -71,7 +71,7 @@
     .container {
        display: grid;
        grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+       grid-template-rows: 1.2fr 0.8fr 4fr 2fr 2fr;
        grid-template-areas:
           "a b"
           "f f"
@@ -80,13 +80,17 @@
           "g g";
        min-height: 100vh;
     }
+    
+    .menu1 {
+       width: 50%;
+    }
  }
  
  @media (max-width: 480px) {
     .container {
        display: grid;
        grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-rows: 0.5fr 0.5fr 3.5fr 3.5fr 3.5fr 3.5fr;
        grid-template-areas:
           "a ."
           "b b"
