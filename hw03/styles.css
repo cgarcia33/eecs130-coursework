@@ -144,6 +144,43 @@ nav a:hover {
   width: 22vw;
 }
 
+.story-detail-container {
+  display: grid;
+  grid-template-columns: 10fr 0.5fr;
+  grid-template-rows: 0.1fr 0.3fr 1fr 0.7fr 1fr 0.1fr;
+  grid-template-areas:
+    "nav nav"
+    "sd-header sd-header"
+    "u-text d-elves"
+    "u-text d-elves"
+    "h-elves h-elves"
+    "l-text l-text";
+  min-height: 100vh;
+  width: 100%;
+}
+
+.story-detail-header {
+  grid-area: sd-header;
+}
+
+.upper-story-text {
+  grid-area: u-text;
+  width: 100%;
+}
+
+.lower-story-text {
+  grid-area: l-text;
+}
+
+#dancing-elves {
+  grid-area: d-elves;
+}
+
+#hiding-elves {
+  grid-area: h-elves;
+  margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
   .category-container {
     display: grid;
@@ -195,5 +232,28 @@ nav a:hover {
 
   .summary {
     width: 100%;
+  }
+
+  .story-detail-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 0.1fr 0.1fr 2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sd-header"
+      "d-elves"
+      "st";
+  }
+
+  #dancing-elves {
+    margin: 0 auto;
+  }
+
+  #hiding-elves {
+    display: none;
+  }
+
+  .story-text {
+    grid-area: st;
   }
 }
