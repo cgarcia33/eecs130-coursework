@@ -5,7 +5,7 @@ body {
 .category-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 0.3fr 3fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 3fr;
     grid-template-areas:
        "nav nav nav nav"
        "c-header c-header c-header c-header"
@@ -124,8 +124,8 @@ nav a:hover {
   .category-card {
     margin-left: 2em;
     margin-right: 2em;
-    height: 20vh;
-    width: 50vw;
+    /* height: 20vh;
+    width: 50vw; */
   }
 
   .img {
