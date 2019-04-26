@@ -32,11 +32,9 @@ nav {
 .c-cards {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: space-evenly;
     grid-area: c-cards;
     height: 100%;
-    /* background: rgb(235, 224, 224); */
 }
 
 nav, .c-header, aside, .c-cards {
@@ -46,6 +44,15 @@ nav, .c-header, aside, .c-cards {
 
 .c-cards .category-card {
     margin: 1.5em;
+}
+
+.category-card {
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.category-card h3 {
+  text-align: center;
 }
 
 h1 {
@@ -81,3 +88,49 @@ a {
     border: solid 1px #ccc; 
     transition: transform 0.5s;
  }
+
+ nav {
+  margin: 1.5em 0;
+}
+
+nav a {
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 4fr;
+    grid-template-areas:
+       "c-header"
+       "c-cards";
+    min-height: 100vh;
+  }
+
+  .c-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: c-cards;
+    height: 100%;
+  }
+
+  .img {
+    height: 30vh;
+    width: 90vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+}
