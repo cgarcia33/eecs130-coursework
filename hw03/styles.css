@@ -213,6 +213,21 @@ nav a:hover {
   grid-area: go-back;
 }
 
+.notable-works {
+  text-align: center;
+  font-style: italic;
+  color: #2a646c;
+}
+
+.notable-works ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.notable-works li {
+  margin: 0.5em 0;
+}
+
 @media (max-width: 1024px) {
   .category-container {
     display: grid;
@@ -275,6 +290,7 @@ nav a:hover {
       "sd-header"
       "d-elves"
       "st";
+    min-height: 100vh;
   }
 
   #dancing-elves {
@@ -287,5 +303,24 @@ nav a:hover {
 
   .story-text {
     grid-area: st;
+  }
+
+  .author-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 2fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav"
+      "a-header"
+      "grimm"
+      "bio"
+      "notable"
+      "go-back";
+    min-height: 100vh;
+  }
+
+  #grimm-pic {
+    margin: 0 auto;
+    height: 2em;
   }
 }
