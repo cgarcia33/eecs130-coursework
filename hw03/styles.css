@@ -121,8 +121,13 @@ nav a:hover {
     height: 100%;
   }
 
+  .category-card {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
   .img {
-    height: 30vh;
+    height: 25vh;
     width: 90vw;
   }
 
