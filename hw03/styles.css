@@ -181,6 +181,38 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.author-container {
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  grid-template-rows: 0.2fr 0.2fr 2fr 1fr 0.1fr;
+  grid-template-areas:
+    "nav nav"
+    "a-header a-header"
+    "grimm bio"
+    "notable ."
+    "go-back .";
+}
+
+.author-header {
+  grid-area: a-header;
+}
+
+#grimm-pic {
+  grid-area: grimm;
+}
+
+.bio {
+  grid-area: bio;
+}
+
+.notable-works {
+  grid-area: notable;
+}
+
+.go-back {
+  grid-area: go-back;
+}
+
 @media (max-width: 1024px) {
   .category-container {
     display: grid;
