@@ -8,21 +8,7 @@ const people = [
     { name: "Malik", pic: "http://knight.gamebanana.com/img/ico/sprays/patrick_star_preview_2.png", score: 40 }
 ];
 
-const compare = (a, b) => {
-    let comp = 0;
-    if (a.score > b.score) {
-        comp = 1;
-    } else if (a.score < b.score) {
-        comp = -1;
-    }
-    // return comp; // for ascending
-    return -1 * comp; // for descending
-}
-people.sort(compare);
-
-
 for (person of people) {
     document.write("<img src='" + person.pic + "'>");
-    document.write("Name: " + person.name + "<br>");
     document.write(person.name + "'s high score is: " + person.score + "<br>");
 }

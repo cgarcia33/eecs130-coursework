@@ -15,7 +15,6 @@ for (person of people) {
             <img src="${person.pic}"><br>
         </div>
         <div class="player-detail">
-            <p>Name: ${person.name}.&nbsp;</p>
             <p>${person.name}'s high score is: ${person.score}</p>
         </div>
     `;
