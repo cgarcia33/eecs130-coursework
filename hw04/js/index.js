@@ -47,9 +47,15 @@ document.querySelector(".close").onclick = close;
 // c. Also attach your “next” function to the onclick event handler of
 //    the “.featured_image” element (so that clicking anywhere on the
 //    image will advance it to the next one) — for convenience.
-var currentImgElement = null;
+let currentImgElement = null;
+const firstImgElement = document.querySelector('.cards').firstElementChild;
+const lastImgElement = document.querySelector('.cards').lastElementChild;
+
 const next = () => {
-    const nextImgElement = currentImgElement.nextElementSibling;
+    let nextImgElement = currentImgElement.nextElementSibling;
+    if (!nextImgElement) {
+        nextImgElement = firstImgElement;
+    }
     const nextImgURL = nextImgElement.querySelector('.image').style.backgroundImage;
     document.querySelector('.featured_image').style.backgroundImage = nextImgURL;
     currentImgElement = nextImgElement;
@@ -66,7 +72,10 @@ document.querySelector(".featured_image").onclick = next;
 // b. Attach your newly created “previous” function to the onclick
 //    event handler of the “.prev” button (in the upper right-hand corner).
 const previous = () => {
-    const previousImgElement = currentImgElement.previousElementSibling;
+    let previousImgElement = currentImgElement.previousElementSibling;
+    if (!previousImgElement) {
+        previousImgElement = lastImgElement;
+    }
     const previousImgURL = previousImgElement.querySelector('.image').style.backgroundImage;
     document.querySelector('.featured_image').style.backgroundImage = previousImgURL;
     currentImgElement = previousImgElement;
