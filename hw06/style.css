@@ -1,0 +1,128 @@
+body {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+}
+body * {
+	box-sizing: border-box;
+}
+
+input, button {
+    font-size: 1.2em;
+    color: #555;
+}
+input {
+    width: 400px;
+    padding: 5px 5px;
+    transition: all 0.30s ease-in-out;
+	outline: none;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+input:focus {
+    box-shadow: 0 0 5px #ff0084;
+	border: 1px solid #ff0084;
+}
+button {
+    padding: 5px 15px;
+    background: white;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    background: rgba(255, 0, 132, 0.77);
+    border-radius: 3px;
+    border-color: transparent;
+	color: #fff;
+}
+button:hover {
+    background: rgba(255, 0, 132, 1);
+}
+
+#output {
+    background: #F8F8F8;
+    margin-top: 20px;
+    border: solid 1px #ccc;
+    min-height: 70vh;
+    padding: 10px;
+}
+
+.track {
+    display: block;
+    text-align: center;
+}
+
+.artist-title {
+    text-align: center;
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+}
+
+.featured-track {
+    display: block;
+    margin: 0 auto;
+}
+
+.album-img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.track-btn {
+    display: block;
+    margin: 1em auto;
+}
+
+#now-playing {
+    text-align: center;
+}
+
+#ytplayer {
+    display: block;
+    margin: 1.5em auto;
+}
+
+.vid-title {
+    text-align: center;
+}
+
+#album-player {
+    width: 350px;
+    text-align: center;
+    display: block;
+    margin: 1.5em auto;
+    margin-bottom: 3em;
+}
+
+#tweets {
+    display: block;
+    margin: 1.5em auto;
+    margin-bottom: 3em;
+}
+
+#tweets h3 {
+    text-align: center;
+}
+
+.tweet {
+    background: rgb(241, 229, 229);
+    margin: 1.1em auto;
+    width: 500px;
+    height: 120px;
+    line-height: 1.2em;
+    padding: 0.5em;
+}
+
+#vids {
+    text-align: center;
+}
